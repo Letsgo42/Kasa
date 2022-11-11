@@ -1,0 +1,20 @@
+@use './Variables.scss' as *;
+
+.Banner {
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../../public/images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  &-title {
+    font-size: 48px;
+    font-family: $font;
+    font-weight: 500;
+    color: #ffff;
+  }
+}

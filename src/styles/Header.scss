@@ -1,0 +1,20 @@
+@use './Variables.scss' as *;
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .logo {
+    height: 68px;
+  }
+  .navbar {
+    display: flex;
+    list-style: none;
+    &-element {
+      margin-left: 50px;
+      font-size: 24px;
+    }
+  }
+}

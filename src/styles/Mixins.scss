@@ -1,0 +1,13 @@
+@use './Variables.scss' as *;
+
+@mixin media-desktop {
+  @media (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: map-get($breakpoints, mobile)) {
+    @content;
+  }
+}
