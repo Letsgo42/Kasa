@@ -1,9 +1,9 @@
-import "../styles/Banner.scss";
+import "./Banner.scss";
 
 function Banner() {
   return (
     <div className="Banner">
-      <h1 className="Banner-title">Chez vous, partout et ailleurs</h1>
+      <h1 className="Banner__title">Chez vous, partout et ailleurs</h1>
     </div>
   );
 }

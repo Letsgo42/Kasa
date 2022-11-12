@@ -1,0 +1,10 @@
+@use '../../styles/Variables.scss' as *;
+@use '../../styles/Mixins.scss' as *;
+
+
+.Home {
+  @include flex-center;
+  flex-direction: column;
+  width: 100%;  
+}
+

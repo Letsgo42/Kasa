@@ -9,12 +9,18 @@
 body {
   margin: auto;
   font-family: $font;
+	color: $red;
 }
 
 a {
-	color: $red;
 	text-decoration: none;
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+.title {
+	font-size: $title-size;
+	font-family: $font;
+	color: #fff;
 }

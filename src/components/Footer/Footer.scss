@@ -1,0 +1,23 @@
+@use '../../styles/Variables.scss' as *;
+@use '../../styles/Mixins.scss' as *;
+
+.Footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  margin: 14px 0;
+  height: 209px;
+  width: 100%;
+  gap: 30px;
+  color: #fff;
+  background-color: #000;
+  &__logo {
+    height: 40px;
+    filter:brightness(0%) invert(1);
+  }
+  &__signature {
+    font-size: 24px;
+  }
+}
