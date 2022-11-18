@@ -1,16 +1,19 @@
 import "./Gallery.scss";
-import Location from "../Location/Location";
+import LocationCard from "../LocationCard/LocationCard";
+import database from '../../logements.json';
+import { useState }  from 'react';
+
 
 function Gallery() {
+  const [logements, setLogements] = useState(database);
+  const locationItem = logements.map((logement) => 
+    <LocationCard key={logement.id} title={logement.title} cover={logement.cover} id={logement.id} />
+  );
+
   return (
-    <main className="Gallery">
-      <Location />
-      <Location />
-      <Location />
-      <Location />
-      <Location />
-      <Location />
-    </main>
+    <section className="Gallery">
+      {locationItem}
+    </section>
   );
 }
 

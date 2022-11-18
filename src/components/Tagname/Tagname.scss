@@ -1,0 +1,14 @@
+@use '../../styles/Variables.scss' as *;
+@use '../../styles/Mixins.scss' as *;
+
+.Tagname {
+  @include flex-center;
+  min-width: 115px;
+  height: 25px;
+  margin: 20px 0 24px 0;
+  padding: 3px 3px;
+  color: #fff;
+  background-color: $red;
+  font-size: 14px;
+  border-radius: 10px;
+}

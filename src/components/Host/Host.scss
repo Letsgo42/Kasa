@@ -1,0 +1,23 @@
+@use '../../styles/Variables.scss' as *;
+@use '../../styles/Mixins.scss' as *;
+
+.Host {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  &__name {
+    display: flex;
+    width: min-content;
+    text-align: right;
+    font-size: $title-size;
+    line-height: 150%;
+  }
+  &__photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+    object-fit: cover;
+  }
+}

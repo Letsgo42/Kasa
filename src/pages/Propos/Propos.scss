@@ -1,0 +1,31 @@
+@use '../../styles/Variables.scss' as *;
+@use '../../styles/Mixins.scss' as *;
+
+.Propos {
+  @include flex-center;
+  flex-direction: column;
+  padding-right: 100px;
+  padding-left: 100px;
+  width: 100%;
+
+  &__dropdown {
+    @include flex-center;
+    flex-direction: column;
+    padding: 0 108px 0 108px;
+    margin-bottom: 46px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  &__banner {
+    @include flex-center;
+    height: 223px;
+    margin: 40px 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/images/propos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+  }
+}

@@ -1,0 +1,9 @@
+@use '../../styles/Variables.scss' as *;
+@use '../../styles/Mixins.scss' as *;
+
+.Rating {
+  @include flex-center;
+  padding: 3px;
+  width: 196px;
+  gap: 10px;
+}

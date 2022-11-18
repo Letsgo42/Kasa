@@ -1,22 +1,18 @@
 @use '../../styles/Variables.scss' as *;
 @use '../../styles/Mixins.scss' as *;
 
-.DropdownOpen {
+.DropdownLargeOpen {
   margin-top: -10px;
-  min-height: 249px;
-  max-width: 582px;
+  height: min-content;
+  max-width: 1023px;
   width: 100%;
-  padding: 40px 15px 20px 20px;
+  padding: 27px 27px 18px 18px;
   background-color: $grey;
   border-radius: 10px;
 
   &__content {
     color: $red;
-    font-size: $title-size;
+    font-size: 24px;
     font-weight: 400;
   }
-}
-
-.Equipment {
-  list-style: none;
 }

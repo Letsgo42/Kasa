@@ -1,0 +1,15 @@
+@use '../../styles/Variables.scss' as *;
+@use '../../styles/Mixins.scss' as *;
+
+.Title {
+  h1, h2 {
+    font-weight: 500;
+  }
+  h1 {
+    margin-bottom: 0;
+    font-size: 36px;
+  }
+  h2 {
+    font-size: $title-size;
+  }
+}

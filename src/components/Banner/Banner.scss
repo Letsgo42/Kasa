@@ -4,13 +4,14 @@
 .Banner {
   @include flex-center;
   height: 223px;
-  margin: 40px 0;
+  margin: 63px 0 43px 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../../../public/images/banner.png);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../public/images/banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
+
   &__title {
     font-size: 48px;
     font-family: $font;
