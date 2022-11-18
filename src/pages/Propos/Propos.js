@@ -4,7 +4,7 @@ import { useState } from "react";
 
 
 function Propos() {
-  const [propos, setPropos] = useState([
+  const [propos] = useState([
     {
       id: 1,
       title: 'Fiabilité',

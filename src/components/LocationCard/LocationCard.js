@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled  from 'styled-components';
 
+
+//STYLED COMPONENT A SUPPRIMER !!!
+
+
 const Card = styled.article`
   background: ${props => `linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${props.background})`};
   background-position: center;

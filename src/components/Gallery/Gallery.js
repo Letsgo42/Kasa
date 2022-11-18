@@ -5,7 +5,7 @@ import { useState }  from 'react';
 
 
 function Gallery() {
-  const [logements, setLogements] = useState(database);
+  const [logements] = useState(database);
   const locationItem = logements.map((logement) => 
     <LocationCard key={logement.id} title={logement.title} cover={logement.cover} id={logement.id} />
   );

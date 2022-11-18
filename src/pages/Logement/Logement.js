@@ -5,17 +5,17 @@ import Tags from "../../components/Tags/Tags";
 import Rating from "../../components/Rating/Rating";
 import Title from "../../components/Logement_title/Title";
 import Host from "../../components/Host/Host";
-import { useParams, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import P404 from "../P404/P404";
+import { useParams } from "react-router-dom";
 import database from '../../logements.json';
 
 function Logement() {
   let { id } = useParams();
-  // const [ isValid, setIsValid ] = useState(true)
-  // const navigate = useNavigate();
   const logement = database.find(logement => logement.id === id.substring(1));
 
-  
+  if (!logement) {
+    return <P404 />;
+  }
   
   return (
     <main className="Logement">

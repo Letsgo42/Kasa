@@ -2,6 +2,7 @@ import "./Rating.scss";
 import Star from "../Star/Star";
 
 function Rating({ rating }) {
+  // for for
   return (
     <div className="Rating">
       <Star color={rating > 0 ? "red" : ""} />
