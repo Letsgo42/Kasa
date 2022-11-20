@@ -34,7 +34,7 @@ function Carrousel({ pictures }) {
       </img>
       <div className="counter title">{currentIndex + 1}/{pictures.length}</div>
       <div 
-        style={{backgroundImage: `url(${pictures[currentIndex]})`}} 
+        style={{ backgroundImage: `url(${pictures[currentIndex]})`, transition: "200ms" }} 
         className="Carrousel__picture" >  
       </div>
     </section>

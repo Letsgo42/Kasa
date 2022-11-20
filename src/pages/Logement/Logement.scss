@@ -6,20 +6,42 @@
   padding: 0 100px;
   margin: 20px 0 14px 0;
 
+  @include media-mobile {
+    padding: 0 20px;
+    margin: 27px 0 64px 0;
+  }
+
   &__infos,
   &__dropdown {
     display: flex;
     justify-content: space-between;
   }
 
+  &__infos {
+    @include media-mobile {
+      flex-direction: column;
+    }
+  }
+
   &__infos-right {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @include media-mobile {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
   }
 
   &__dropdown {
     width: 100%;
     gap: 76px;
+
+    @include media-mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }

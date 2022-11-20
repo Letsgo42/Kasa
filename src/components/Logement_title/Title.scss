@@ -2,14 +2,26 @@
 @use '../../styles/Mixins.scss' as *;
 
 .Title {
-  h1, h2 {
+
+  h1,
+  h2 {
     font-weight: 500;
   }
+
   h1 {
     margin-bottom: 0;
     font-size: 36px;
+
+    @include media-mobile {
+      font-size: 18px;
+    }
   }
+
   h2 {
     font-size: $title-size;
+
+    @include media-mobile {
+      font-size: 14px;
+    }
   }
 }

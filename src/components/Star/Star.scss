@@ -4,4 +4,9 @@
 .Star {
   width: 30px;
   height: 30px;
+
+  @include media-mobile {
+    width: 15px;
+    height: 15px;
+  }
 }

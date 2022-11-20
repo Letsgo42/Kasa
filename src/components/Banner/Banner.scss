@@ -3,6 +3,7 @@
 
 .Banner {
   @include flex-center;
+  padding-left: 30px;
   height: 223px;
   margin: 63px 0 43px 0;
   width: 100%;
@@ -12,10 +13,25 @@
   background-size: cover;
   border-radius: 25px;
 
+  @include media-mobile {
+    padding-left: 16px;
+    justify-content: flex-start;
+    height: 111px;
+    margin: 16px 0 22px 0;
+    border-radius: 10px;
+  }
+
   &__title {
+    height: 68px;
     font-size: 48px;
     font-family: $font;
     font-weight: 500;
     color: #ffff;
+
+    @include media-mobile {
+      height: 48px;
+      font-size: 24px;
+      line-height: 100%;
+    }
   }
 }

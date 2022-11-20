@@ -4,16 +4,9 @@
 //COLORS
 $red: #FF6060;
 $grey: #F6F6F6;
-$gradient: linear-gradient(180deg, $red, rgba(0,0,0,0.3) 100%);
+$gradient: linear-gradient(180deg, $red, rgba(0, 0, 0, 0.3) 100%);
 
 //FONTS
 $font: 'Montserrat', sans-serif;
 $title-size: 18px;
 $mobile-size: 12px;
-
-//BREAKPOINTS
-$breakpoints: (
-  desktop: 1240px,
-  mobile: 375px
-);
-

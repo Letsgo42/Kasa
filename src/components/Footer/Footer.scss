@@ -14,6 +14,12 @@
   color: #fff;
   background-color: #000;
 
+  @include media-mobile {
+    padding: 62px 0;
+    justify-content: center;
+    gap: 0;
+  }
+
   &__logo {
     height: 40px;
     filter: brightness(0%) invert(1);
@@ -21,5 +27,13 @@
 
   &__signature {
     font-size: 24px;
+
+    @include media-mobile {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      height: 46px;
+      font-size: $mobile-size;
+    }
   }
 }

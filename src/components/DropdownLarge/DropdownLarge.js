@@ -11,16 +11,16 @@ function DropdownLarge({ title, content }) {
   return (
     <article className="DropdownLarge">
       <button
-        className="DropdownLarge-button"
+        className="DropdownLarge__button"
         onClick={toggleDropdown}
-        style={{ marginBottom: !isOpen && title === "Sécurité" && "155px" }}
+        style={{ marginBottom: !isOpen && title === "Sécurité" && "187px" }}
       >
         {title}
         <img
-          className="DropdownLarge-button-img"
+          className="DropdownLarge__button-img"
           src="/images/arrow.svg"
           alt="white arrow"
-          style={{ transform: isOpen && "rotate(180deg)" }}
+          style={isOpen ? { transform: "rotate(540deg)", transition: "transform 0.15s" } : {}}
         />
       </button>
       {isOpen && (<DropdownLargeOpen content={content} />)}

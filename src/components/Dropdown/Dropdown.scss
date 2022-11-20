@@ -12,13 +12,29 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 52px;
     padding: 13px 20px;
     background-color: $red;
     border-radius: 10px;
+    border-width: 0;
+
+    @include media-mobile {
+      height: 29.93px;
+      padding: 5.48px 11.51px;
+      border-radius: 5px;
+      border-width: 0;
+    }
 
     &:hover {
       cursor: pointer;
+    }
+
+    &-img {
+      @include media-mobile {
+        width: 15px;
+        height: auto;
+      }
     }
   }
 }

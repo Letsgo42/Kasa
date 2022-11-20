@@ -1,27 +1,21 @@
 import "./LocationCard.scss";
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import styled  from 'styled-components';
 
-
-//STYLED COMPONENT A SUPPRIMER !!!
-
-
-const Card = styled.article`
-  background: ${props => `linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${props.background})`};
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-`
 
 function LocationCard({ title, cover, id }) {
+  const backgroundCardStyle = {
+    background: `linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${cover})`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+  };
+
   return (
-    <Card className="LocationCard" background={cover}>
+    <div className="LocationCard" style={backgroundCardStyle} >
       <Link to={`/logement/:${id}`} className="LocationCard__link">
         <p className="LocationCard__title title">{title}</p>
       </Link>
-    </Card>
+    </div>
   );
 }
 

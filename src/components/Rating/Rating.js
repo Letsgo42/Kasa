@@ -2,14 +2,19 @@ import "./Rating.scss";
 import Star from "../Star/Star";
 
 function Rating({ rating }) {
-  // for for
+  let stars = [];
+  for (let i = 0; i < 5; i++) {
+    if (rating > i) {
+      stars.push(<Star key={i} color="red" />);
+    }
+    else {
+      stars.push(<Star key={i} color="grey" />);
+    }
+  }
+  
   return (
     <div className="Rating">
-      <Star color={rating > 0 ? "red" : ""} />
-      <Star color={rating > 1 ? "red" : ""} />
-      <Star color={rating > 2 ? "red" : ""} />
-      <Star color={rating > 3 ? "red" : ""} />
-      <Star color={rating > 4 ? "red" : ""} />
+      {stars}
     </div>
   );
 }

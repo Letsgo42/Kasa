@@ -4,10 +4,15 @@
 .Gallery {
   @include flex-center;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 56px 50px 43px 50px;
   margin-bottom: 40px;
   width: 100%;
   background-color: $grey;
   gap: 50px 60px;
   border-radius: 25px;
+
+  @include media-mobile {
+    padding: 0;
+    gap: 20px;
+  }
 }

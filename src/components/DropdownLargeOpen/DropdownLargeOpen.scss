@@ -10,9 +10,20 @@
   background-color: $grey;
   border-radius: 10px;
 
+  @include media-mobile {
+    min-height: 143.32px;
+    margin-top: -7px;
+    padding: 23px 7px 12px 12px;
+  }
+
   &__content {
     color: $red;
     font-size: 24px;
     font-weight: 400;
+    line-height: 142.6%;
+
+    @include media-mobile {
+      font-size: $mobile-size;
+    }
   }
 }

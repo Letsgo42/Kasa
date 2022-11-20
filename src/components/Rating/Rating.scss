@@ -6,4 +6,9 @@
   padding: 3px;
   width: 196px;
   gap: 10px;
+
+  @include media-mobile {
+    justify-content: flex-start;
+    gap: 5px;
+  }
 }

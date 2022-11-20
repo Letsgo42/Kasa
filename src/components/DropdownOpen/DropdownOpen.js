@@ -1,4 +1,5 @@
 import "./DropdownOpen.scss";
+import PropTypes from 'prop-types';
 
 function DropdownOpen({ content, title }) {
   if (title !== "Description") {
@@ -14,5 +15,9 @@ function DropdownOpen({ content, title }) {
       </div>
     );
   }
+
+  DropdownOpen.propTypes = {
+    title: PropTypes.string.isRequired
+  };
 
 export default DropdownOpen;

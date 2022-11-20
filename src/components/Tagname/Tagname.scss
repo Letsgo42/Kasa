@@ -5,10 +5,17 @@
   @include flex-center;
   min-width: 115px;
   height: 25px;
-  margin: 20px 0 24px 0;
-  padding: 3px 3px;
+  padding: 3px;
   color: #fff;
   background-color: $red;
   font-size: 14px;
   border-radius: 10px;
+
+  @include media-mobile {
+    height: 18px;
+    min-width: 84px;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 5px;
+  }
 }

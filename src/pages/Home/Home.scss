@@ -5,7 +5,10 @@
 .Home {
   @include flex-center;
   flex-direction: column;
-  padding-right: 100px;
-  padding-left: 100px;
+  padding: 0 100px;
   width: 100%;
+
+  @include media-mobile {
+    padding: 0 20px;
+  }
 }

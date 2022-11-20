@@ -3,6 +3,13 @@
 
 .Tags {
   display: flex;
-  // width: min-content;
+  margin-top: 20px;
+  margin-bottom: 24px;
   gap: 10px;
+
+  @include media-mobile {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
 }
