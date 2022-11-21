@@ -3,8 +3,8 @@
 
 .DropdownOpen {
   margin-top: -10px;
-  min-height: 249px;
   width: 100%;
+  min-height: 249px;
   padding: 40px 15px 20px 20px;
   background-color: $grey;
   border-radius: 10px;
@@ -27,4 +27,22 @@
 
 .Equipment {
   list-style: none;
+}
+
+.DropdownLargeOpen {
+  height: min-content;
+  min-height: 0;
+  padding: 27px 27px 18px 18px;
+
+  @include media-mobile {
+    margin-top: -7px;
+  }
+
+  &__content {
+    font-size: 24px;
+
+    @include media-mobile {
+      font-size: $mobile-size;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import "./Propos.scss";
-import DropdownLarge from "../../components/DropdownLarge/DropdownLarge";
+import Dropdown from "../../components/Dropdown/Dropdown";
 import { useState } from "react";
 
 
@@ -32,10 +32,10 @@ function Propos() {
       <figure className="Propos__banner"></figure>
       <section className="Propos__dropdown">
         {propos.map((propo) => (
-          <DropdownLarge
+          <Dropdown
             key={propo.id}
             title={propo.title}
-            content={propo.content}
+            proposContent={propo.content}
           />
         ))}
       </section>

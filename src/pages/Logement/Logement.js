@@ -31,8 +31,8 @@ function Logement() {
         </div>
       </section>
       <section className="Logement__dropdown">
-        <Dropdown title="Description" content={logement.description} />
-        <Dropdown title="Équipements" content={logement.equipments} />
+        <Dropdown title="Description" logementContent={logement.description} />
+        <Dropdown title="Équipements" logementContent={logement.equipments} />
       </section>
     </main>
   );

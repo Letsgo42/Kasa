@@ -10,10 +10,10 @@ function Header() {
       <img className="Header__logo" src="/images/logo.svg" alt="logo Kasa" />
       <ul className="Header__navbar">
         <li className="Header__navbar-element">
-          <Link to="/" className={( (pathname.includes("propos") && pathname !== "/propos") || (!pathname.includes("propos")) ) ? "current" : undefined }>Accueil</Link>
+          <Link to="/" className={ (pathname.includes("propos") && pathname !== "/propos") || (!pathname.includes("propos")) ? "current" : undefined}>Accueil</Link>
         </li>
         <li className="Header__navbar-element">
-          <Link to="/propos" className={ pathname === "/propos" && "current" }>A Propos</Link>
+          <Link to="/propos" className={ pathname === "/propos" ? "current" : undefined }>A Propos</Link>
         </li>
       </ul>
     </header>

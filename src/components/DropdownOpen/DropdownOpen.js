@@ -1,8 +1,13 @@
 import "./DropdownOpen.scss";
 import PropTypes from 'prop-types';
+import { useLocation } from 'react-router-dom';
 
 function DropdownOpen({ content, title }) {
-  if (title !== "Description") {
+  const { pathname } = useLocation();
+  const divClass = pathname === '/propos' && 'DropdownLargeOpen';
+  const contentClass = pathname === '/propos' && 'DropdownLargeOpen__content';
+
+  if (title === "Équipements") {
     const equipmentItem = content.map((equipment, index) => 
     <li key={index} className="DropdownOpen__content">{equipment}</li>);
 
@@ -10,8 +15,8 @@ function DropdownOpen({ content, title }) {
   }
 
     return (
-      <div className="DropdownOpen">
-        <p className="DropdownOpen__content">{content}</p>
+      <div className={ `DropdownOpen ${divClass}` }>
+        <p className={ `DropdownOpen__content ${contentClass}` }>{content}</p>
       </div>
     );
   }
