@@ -11,7 +11,7 @@ function DropdownLarge({ title, content }) {
   return (
     <article className="DropdownLarge">
       <button
-        className="DropdownLarge__button"
+        className="DropdownLarge__button title"
         onClick={toggleDropdown}
         style={{ marginBottom: !isOpen && title === "Sécurité" && "187px" }}
       >

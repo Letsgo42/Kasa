@@ -4,7 +4,6 @@
 .DropdownOpen {
   margin-top: -10px;
   min-height: 249px;
-  max-width: 582px;
   width: 100%;
   padding: 40px 15px 20px 20px;
   background-color: $grey;
@@ -17,16 +16,13 @@
   }
 
   &__content {
-    color: $red;
     font-size: $title-size;
     font-weight: 400;
 
     @include media-mobile {
       font-size: $mobile-size;
     }
-
   }
-
 }
 
 .Equipment {

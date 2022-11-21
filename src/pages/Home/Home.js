@@ -1,12 +1,13 @@
 import "./Home.scss";
-import Banner from "../../components/Banner/Banner";
 import Gallery from "../../components/Gallery/Gallery";
 
 
 function Home() {
   return (
     <main className="Home">
-      <Banner />
+      <div className="Banner">
+        <h1>Chez vous, partout et ailleurs</h1>
+      </div>
       <Gallery />
     </main>
   );
