@@ -3,7 +3,7 @@ import Carrousel from "../../components/Carrousel/Carrousel";
 import Dropdown from "../../components/Dropdown/Dropdown";
 import Tags from "../../components/Tags/Tags";
 import Rating from "../../components/Rating/Rating";
-import Title from "../../components/Logement_title/Title";
+import Title from "../../components/Title/Title";
 import Host from "../../components/Host/Host";
 import P404 from "../P404/P404";
 import { useParams } from "react-router-dom";

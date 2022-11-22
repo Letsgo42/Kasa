@@ -23,6 +23,7 @@ function Carrousel({ pictures }) {
         src="/images/leftArrow.svg" 
         alt="Diapo précédente"
         onClick={previousPicture}
+        style={{ display: `${pictures.length === 1 && 'none'}` }}
         >
       </img>
       <img 
@@ -30,11 +31,12 @@ function Carrousel({ pictures }) {
         src="/images/rightArrow.svg" 
         alt="Diapo suivante"
         onClick={nextPicture}
+        style={{ display: `${pictures.length === 1 && 'none'}` }}
         >
       </img>
       <div className="counter title">{currentIndex + 1}/{pictures.length}</div>
       <div 
-        style={{ backgroundImage: `url(${pictures[currentIndex]})`, transition: "200ms" }} 
+        style={{ backgroundImage: `url(${pictures[currentIndex]})`, transition: "300ms" }} 
         className="Carrousel__picture" >  
       </div>
     </section>

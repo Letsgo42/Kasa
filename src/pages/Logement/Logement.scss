@@ -23,10 +23,18 @@
     }
   }
 
+  &__infos-left {
+    margin-top: 6px;
+
+    @include media-mobile {
+      margin-top: 0;
+    }
+  }
+
   &__infos-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 24px;
 
     @include media-mobile {
       flex-direction: row-reverse;
