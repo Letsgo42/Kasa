@@ -43,7 +43,7 @@ function Propos() {
     <main className="Propos">
       <div 
       className="Propos__banner" 
-      style={ width < breakpoint && mobileStyle }
+      style={ width < breakpoint ? mobileStyle : {} }
       >
       </div>
       <section className="Propos__dropdown">
