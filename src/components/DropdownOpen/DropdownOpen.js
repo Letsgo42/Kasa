@@ -4,8 +4,8 @@ import { useLocation } from 'react-router-dom';
 
 function DropdownOpen({ content, title }) {
   const { pathname } = useLocation();
-  const divClass = pathname === '/propos' && 'DropdownLargeOpen';
-  const contentClass = pathname === '/propos' && 'DropdownLargeOpen__content';
+  const divClass = pathname === '/propos' ? 'DropdownLargeOpen' : '';
+  const contentClass = pathname === '/propos' ? 'DropdownLargeOpen__content' : '';
 
   if (title === "Équipements") {
     const equipmentItem = content.map((equipment, index) => 

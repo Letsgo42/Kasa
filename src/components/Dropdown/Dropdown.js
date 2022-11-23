@@ -28,21 +28,25 @@ function Dropdown({ title, logementContent, proposContent }) {
     <article 
       className="Dropdown" 
       style={{ marginBottom: !isOpen && title === "Équipements" && width < breakpoint && "-102px" }}
-      >
+    >
       <button 
         className={buttonClasses} 
         onClick={toggleDropdown}
         style={{ marginBottom: marginBtm }}
-      >
-      {title}
-      <img
-        className="Dropdown__button-img"
-        src="/images/arrow.svg"
-        alt="white arrow"
-        style={isOpen ? { transform: "rotate(540deg)", transition: "transform 0.15s" } : {}}
-      />
+      > {title}
+        <img
+          className="Dropdown__button-img"
+          src="/images/arrow.svg"
+          alt="white arrow"
+          style={isOpen ? { transform: "rotate(540deg)", transition: "transform 0.15s" } : {}}
+        />
       </button>
-      { isOpen && (<DropdownOpen content={ pathname === '/propos' ? proposContent : logementContent } title={title} />) }
+      { isOpen && (
+        <DropdownOpen 
+          content={ pathname === '/propos' ? proposContent : logementContent } 
+          title={title} 
+        />
+      )}
     </article>
   );
 }
