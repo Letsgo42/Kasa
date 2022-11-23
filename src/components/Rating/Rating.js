@@ -1,5 +1,6 @@
 import "./Rating.scss";
 import Star from "../Star/Star";
+import PropTypes from 'prop-types';
 
 function Rating({ rating }) {
   let stars = [];
@@ -18,5 +19,9 @@ function Rating({ rating }) {
     </div>
   );
 }
+
+Rating.propTypes = {
+  rating: PropTypes.number.isRequired
+};
 
 export default Rating;

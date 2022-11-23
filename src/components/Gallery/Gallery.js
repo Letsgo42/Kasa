@@ -7,7 +7,12 @@ import { useState }  from 'react';
 function Gallery() {
   const [logements] = useState(database);
   const locationItem = logements.map((logement) => 
-    <Card key={logement.id} title={logement.title} cover={logement.cover} id={logement.id} />
+    <Card 
+    key={logement.id} 
+    title={logement.title} 
+    cover={logement.cover} 
+    id={logement.id} 
+    />
   );
 
   return (

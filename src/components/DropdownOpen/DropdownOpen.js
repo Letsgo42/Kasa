@@ -22,6 +22,10 @@ function DropdownOpen({ content, title }) {
   }
 
   DropdownOpen.propTypes = {
+    content: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+    ]),
     title: PropTypes.string.isRequired
   };
 

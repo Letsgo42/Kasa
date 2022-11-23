@@ -22,17 +22,29 @@ function Logement() {
       <Carrousel pictures={logement.pictures} />
       <section className="Logement__infos">
         <div className="Logement__infos-left">
-          <Title title={logement.title} location={logement.location} />
+          <Title 
+            title={logement.title} 
+            location={logement.location} 
+          />
           <Tags tagName={logement.tags} />
         </div>
         <div className="Logement__infos-right">
-          <Host name={logement.host.name} picture={logement.host.picture} />
+          <Host 
+            name={logement.host.name} 
+            picture={logement.host.picture}
+          />
           <Rating rating={Number(logement.rating)} />
         </div>
       </section>
       <section className="Logement__dropdown">
-        <Dropdown title="Description" logementContent={logement.description} />
-        <Dropdown title="Équipements" logementContent={logement.equipments} />
+        <Dropdown 
+          title="Description" 
+          logementContent={logement.description} 
+        />
+        <Dropdown 
+          title="Équipements" 
+          logementContent={logement.equipments}
+        />
       </section>
     </main>
   );

@@ -52,7 +52,12 @@ function Dropdown({ title, logementContent, proposContent }) {
 }
 
 Dropdown.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  proposContent: PropTypes.string,
+  logementContent: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string)
+  ])
 };
 
 export default Dropdown;

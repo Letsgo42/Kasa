@@ -1,7 +1,6 @@
 import "./Home.scss";
 import Gallery from "../../components/Gallery/Gallery";
 
-
 function Home() {
   return (
     <main className="Home">

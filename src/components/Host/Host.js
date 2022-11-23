@@ -5,7 +5,11 @@ function Host({ name, picture }) {
   return (
     <div className="Host">
       <div className="Host__name">{name}</div>
-      <img className="Host__photo" src={picture} alt={name} />
+      <img 
+        className="Host__photo" 
+        src={picture} 
+        alt={name} 
+      />
     </div>
   );
 }
