@@ -23,8 +23,8 @@ function Header() {
         </li>
         <li className="Header__navbar-element">
           <Link 
-          to="/propos" 
-          className={ pathname === "/propos" ? "current" : undefined }
+            to="/propos" 
+            className={ pathname === "/propos" ? "current" : undefined }
           >A Propos
           </Link>
         </li>

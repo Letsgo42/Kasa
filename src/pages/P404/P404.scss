@@ -15,10 +15,14 @@
   }
 
   h1 {
-    @include flex-center;
+    display: flex;
+    align-items: center;
+    width: 597px;
+    height: 263px;
     margin-top: 169px;
     font-size: 288px;
     font-weight: 700;
+
 
     @include media-mobile {
       width: 198px;
