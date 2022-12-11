@@ -10,7 +10,6 @@ function ReactRouter() {
       <Route path='/' element={<Home />} />
       <Route path='/logement/:id' element={<Logement />} />
       <Route path='/propos' element={<Propos />} />
-      <Route path='/p404' element={<P404 />} />
       <Route path='*' element={<P404 />} />
     </Routes>
   )
