@@ -9,6 +9,7 @@ import P404 from "../../pages/P404/P404";
 import database from '../../logements.json';
 import { useParams } from "react-router-dom";
 
+
 function Logement() {
   let { id } = useParams();
   const logement = database.find(logement => logement.id === id.substring(1));

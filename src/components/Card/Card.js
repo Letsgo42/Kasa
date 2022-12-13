@@ -11,8 +11,8 @@ function Card({ title, cover, id }) {
   };
 
   return (
-    <div 
-      className="Card" 
+    <div
+      className="Card"
       style={backgroundCardStyle}
     >
       <Link to={`/logement/:${id}`} className="Card__link">
