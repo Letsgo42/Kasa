@@ -6,11 +6,11 @@ import ReactRouter from "../../ReactRouter";
 
 function App() {
   return (
-      <div className="App">
-        <Header />
-        <ReactRouter />
-        <Footer />
-      </div>
+    <div className="App">
+      <Header />
+      <ReactRouter />
+      <Footer />
+    </div>
   );
 };
 

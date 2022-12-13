@@ -1,6 +1,6 @@
 import "./Logement.scss";
 import Carrousel from "../../components/Carrousel/Carrousel";
-import Dropdown from "../../components/Dropdown/Dropdown";
+import Collapse from "../../components/Collapse/Collapse";
 import Tags from "../../components/Tags/Tags";
 import Rating from "../../components/Rating/Rating";
 import Title from "../../components/Title/Title";
@@ -36,12 +36,12 @@ function Logement() {
           <Rating rating={Number(logement.rating)} />
         </div>
       </section>
-      <section className="Logement__dropdown">
-        <Dropdown
+      <section className="Logement__collapse">
+        <Collapse
           title="Description"
           logementContent={logement.description}
         />
-        <Dropdown
+        <Collapse
           title="Équipements"
           logementContent={logement.equipments}
         />

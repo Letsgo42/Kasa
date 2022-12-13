@@ -1,5 +1,5 @@
 import "./Propos.scss";
-import Dropdown from "../../components/Dropdown/Dropdown";
+import Collapse from "../../components/Collapse/Collapse";
 import { useState, useEffect } from "react";
 
 
@@ -47,9 +47,9 @@ function Propos() {
         style={width < breakpoint ? mobileStyle : {}}
       >
       </div>
-      <section className="Propos__dropdown">
+      <section className="Propos__collapse">
         {propos.map((propo) => (
-          <Dropdown
+          <Collapse
             key={propo.id}
             title={propo.title}
             proposContent={propo.content}
