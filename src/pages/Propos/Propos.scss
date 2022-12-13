@@ -21,6 +21,10 @@
     width: 100%;
     gap: 30px;
 
+    @media (max-width: 768px) {
+      padding: 0 22px 0 22px;
+    }
+
     @include media-mobile {
       padding: 0;
       margin-bottom: 13;

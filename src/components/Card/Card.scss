@@ -6,6 +6,10 @@
   height: 340px;
   border-radius: 10px;
 
+  @media (max-width: 768px) {
+    width: 580px;
+  }
+
   @include media-mobile {
     height: 255px;
   }
@@ -32,7 +36,6 @@
 
     @include media-mobile {
       margin-bottom: 15px;
-      font-size: 18px;
     }
   }
 }

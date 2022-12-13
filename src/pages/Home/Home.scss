@@ -8,6 +8,14 @@
   padding: 0 100px;
   width: 100%;
 
+  @media (max-width: 1024px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 50px;
+  }
+
   @include media-mobile {
     padding: 0 20px;
   }
@@ -36,9 +44,12 @@
     h1 {
       height: 68px;
       font-size: 48px;
-      font-family: $font;
       font-weight: 500;
       color: #ffff;
+
+      @media (max-width: 768px) {
+        font-size: 38px;
+      }
 
       @include media-mobile {
         height: 48px;
