@@ -28,6 +28,10 @@
   &__signature {
     font-size: 24px;
 
+    @media (max-width: 812px) {
+      font-size: 18px;
+    }
+
     @include media-mobile {
       display: flex;
       align-items: flex-end;

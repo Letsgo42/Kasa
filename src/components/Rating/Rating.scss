@@ -7,8 +7,11 @@
   width: 196px;
   gap: 10px;
 
-  @include media-mobile {
+  @media (max-width: 768px) {
     justify-content: flex-start;
+  }
+
+  @include media-mobile {
     gap: 5px;
   }
 }

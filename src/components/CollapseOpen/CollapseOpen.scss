@@ -19,6 +19,10 @@
     font-size: $title-size;
     font-weight: 400;
 
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+
     @include media-mobile {
       font-size: $mobile-size;
     }

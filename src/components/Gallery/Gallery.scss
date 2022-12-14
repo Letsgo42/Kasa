@@ -11,6 +11,11 @@
   gap: 50px 60px;
   border-radius: 25px;
 
+  @media (max-width: 768px) {
+    padding: 26px 10px 23px 10px;
+    gap: 20px;
+  }
+
   @include media-mobile {
     padding: 0;
     gap: 20px;

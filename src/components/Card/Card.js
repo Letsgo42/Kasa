@@ -16,7 +16,7 @@ function Card({ title, cover, id }) {
       style={backgroundCardStyle}
     >
       <Link to={`/logement/:${id}`} className="Card__link">
-        <p className="Card__title title">{title}</p>
+        <p className="Card__title">{title}</p>
       </Link>
     </div>
   );

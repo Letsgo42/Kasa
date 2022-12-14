@@ -7,7 +7,7 @@
   margin-bottom: 24px;
   gap: 10px;
 
-  @include media-mobile {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 16px;

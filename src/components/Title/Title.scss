@@ -12,6 +12,10 @@
     margin-bottom: 0;
     font-size: 36px;
 
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
+
     @include media-mobile {
       font-size: 18px;
     }
@@ -19,6 +23,10 @@
 
   h2 {
     font-size: $title-size;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
 
     @include media-mobile {
       font-size: 14px;

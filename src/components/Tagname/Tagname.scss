@@ -11,6 +11,10 @@
   font-size: 14px;
   border-radius: 10px;
 
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
   @include media-mobile {
     height: 18px;
     min-width: 84px;
